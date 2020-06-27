@@ -3,9 +3,9 @@
     <h2><%= pluralize(@event.errors.count, "error") %> prohibited this person from being saved:</h2>
 
     <ul>
-    <% @event.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
     </ul>
   </div>
 <% end %>
@@ -18,4 +18,9 @@
 <div class="form-group">
   <%= f.label :description %>
   <%= f.text_area :description, :class => "form-control" %>
+</div>
+
+<div class="form-group">
+  <%= f.label :status %>
+  <%= f.select :status, Event::STATUS.map {|s| [t(s, :scope => "event.status"), s]}, {}, :class => "form-control" %>
 </div>
