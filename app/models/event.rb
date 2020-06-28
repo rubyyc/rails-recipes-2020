@@ -6,6 +6,8 @@ class Event < ApplicationRecord
 
   before_validation :generate_friendly_id, :on => :create
 
+  belongs_to :category, :optional => true
+
 
   # 优化网址第一种方法
   # def to_param
