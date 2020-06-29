@@ -17,9 +17,17 @@
     <%= f.text_field :email, :class => "form-control" %>
   </div>
 
+  <% if false %>
+    <div>这是普通的多选</div>
+    <div class="form-group">
+      <%= f.label :group_ids %>
+      <%= f.collection_check_boxes(:group_ids, Group.all, :id, :name) %>
+    </div>
+  <% end %>
+
   <div class="form-group">
     <%= f.label :group_ids %>
-    <%= f.collection_check_boxes(:group_ids, Group.all, :id, :name) %>
+    <%= f.select :group_ids, Group.all.map {|g| [g.name,g.id]}, {}, multiple: true, :class => "form-control"%>
   </div>
 
   <div class="form-group">
@@ -30,3 +38,7 @@
 
 
 <% end %>
+
+<script>
+    $("#user_group_ids").select2()
+</script>
