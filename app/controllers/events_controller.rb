@@ -9,19 +9,19 @@ class EventsController < ApplicationController
     @event = Event.find_by_friendly_id!(params[:id])
   end
 
-  def new
-    @event = Event.new
-  end
-
-  def create
-    @event = Event.new(event_params)
-
-    if @event.save
-      redirect_to admin_events_path
-    else
-      render "new"
-    end
-  end
+  # def new
+  #   @event = Event.new
+  # end
+  #
+  # def create
+  #   @event = Event.new(event_params)
+  #
+  #   if @event.save
+  #     redirect_to admin_events_path
+  #   else
+  #     render "new"
+  #   end
+  # end
 
   def event_params
     params.require(:event).permit(:name, :description, :status, :category_id)
