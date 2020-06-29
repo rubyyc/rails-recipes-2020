@@ -5,6 +5,7 @@ class CreateProfiles < ActiveRecord::Migration[5.0]
       t.string :legal_name
       t.date :birthday
       t.string :education
+      t.string :location
       t.string :occupation
       t.text :bio
       t.text :specialty

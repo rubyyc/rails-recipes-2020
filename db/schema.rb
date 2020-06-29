@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20200629035140) do
     t.string   "legal_name"
     t.date     "birthday"
     t.string   "education"
+    t.string   "location"
     t.string   "occupation"
     t.text     "bio"
     t.text     "specialty"
