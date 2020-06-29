@@ -1,12 +1,19 @@
 class Event < ApplicationRecord
 
+  has_many :tickets, :dependent => :destroy, :inverse_of  => :event
+
+  accepts_nested_attributes_for :tickets, :allow_destroy => true, :reject_if => :all_blank
+
   validates_presence_of :name
   STATUS = ["draft", "public", "private"]
   validates_inclusion_of :status, :in => STATUS
 
   before_validation :generate_friendly_id, :on => :create
+  # before_commit :generate_friendly_id
+
 
   belongs_to :category, :optional => true
+
 
 
   # 优化网址第一种方法
@@ -21,6 +28,7 @@ class Event < ApplicationRecord
   protected
 
   def generate_friendly_id
-    self.friendly_id || SecureRandom.uuid
+    puts "kkkk"
+    self.friendly_id ||= SecureRandom.uuid
   end
 end
