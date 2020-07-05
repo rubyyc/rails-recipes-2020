@@ -47,6 +47,7 @@ gem "nested_form_fields"
 gem 'bootstrap-datepicker-rails'
 gem 'ckeditor', '4.2.0'
 gem 'ranked-model', '0.4.2'
+gem 'jquery-ui-rails'
 
 
 
