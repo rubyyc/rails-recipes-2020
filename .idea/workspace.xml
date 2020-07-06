@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb" line="44" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4d3b4d-f400-4409-b11b-2e28641b2693" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/registrations/step2.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/registrations/step2.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="af4d3b4d-f400-4409-b11b-2e28641b2693" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -53,16 +51,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,6 +109,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/alidator.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="685">
+              <caret line="8" column="6413" lean-forward="true" selection-start-line="8" selection-start-column="6413" selection-end-line="8" selection-end-column="6413" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/registrations/step2.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="855">
@@ -164,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20200629031101_create_memberships.rb" />
         <option value="$PROJECT_DIR$/app/models/group.rb" />
         <option value="$PROJECT_DIR$/app/models/membership.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" />
@@ -215,6 +214,7 @@
         <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/registrations/step2.html.erb" />
+        <option value="$PROJECT_DIR$/vendor/assets/javascripts/alidator.min.js" />
       </list>
     </option>
   </component>
@@ -339,6 +339,24 @@
               <item name="rails-recipes" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
               <item name="migrate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rails-recipes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rails-recipes" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rails-recipes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rails-recipes" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rails-recipes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rails-recipes" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -486,12 +504,12 @@
       <workItem from="1593155782802" duration="5660000" />
       <workItem from="1593318617700" duration="8155000" />
       <workItem from="1593671076399" duration="11199000" />
-      <workItem from="1594008199093" duration="3879000" />
+      <workItem from="1594008199093" duration="4128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28893000" />
+    <option name="totallyTimeSpent" value="29142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -566,13 +584,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/spring.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -854,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/registrations/step3.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/registration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -889,6 +893,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/registrations/step3.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/alidator.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="8" column="6413" lean-forward="true" selection-start-line="8" selection-start-column="6413" selection-end-line="8" selection-end-column="6413" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
