@@ -16,6 +16,7 @@ class RegistrationsController < ApplicationController
     if @registration.save
       redirect_to step2_event_registration_path(@event, @registration)
     else
+      flash.now[:alert] = @registration.errors[:base].join("、")
       render "new"
     end
   end
@@ -35,6 +36,7 @@ class RegistrationsController < ApplicationController
     if @registration.update(registration_params)
       redirect_to step2_event_registration_path(@event, @registration)
     else
+
       render "step2"
     end
   end
