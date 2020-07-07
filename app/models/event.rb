@@ -32,7 +32,7 @@ class Event < ApplicationRecord
   protected
 
   def generate_friendly_id
-    puts "kkkk"
+    puts "find_by_friendly_id!k"
     self.friendly_id ||= SecureRandom.uuid
   end
 end
