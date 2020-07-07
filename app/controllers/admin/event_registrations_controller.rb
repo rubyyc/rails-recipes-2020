@@ -22,6 +22,11 @@ class Admin::EventRegistrationsController < AdminController
     end
 
 
+    if params[:registration_id].present?
+      @registrations = @registrations.where(:id => params[:registration_id].split(","))
+    end
+
+
     # if params[:status].present? && Registration::STATUS.include?(params[:status])
     #   @registrations = @registrations.by_status(params[:status])
     # end
