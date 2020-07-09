@@ -50,6 +50,8 @@ gem 'ranked-model', '0.4.2'
 gem 'jquery-ui-rails'
 gem 'kaminari'
 gem 'ransack'
+gem 'carrierwave'
+gem "mini_magick"
 
 
 
