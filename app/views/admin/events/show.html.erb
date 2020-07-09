@@ -11,6 +11,12 @@
   <% end %>
 <% end %>
 
+<hr color="red">
+<ul>
+  <% @event.attachments.each do |a| %>
+    <li><%= link_to a.description, a.attachment.url %></li>
+  <% end %>
+</ul>
 <p>
   <%= link_to "打開前台", event_path(@event), :target => "_blank", :class => "btn btn-primary" %>
 </p>
