@@ -2,12 +2,13 @@ class Admin::EventsController < AdminController
 
   def index
     # @events = Event.all
+    # @events = Event.rank(:row_order).all
     @events = Event.rank(:row_order).all
   end
 
   def show
     # @event = Event.find(params[:id])
-    @event = Event.find_by_friendly_id!(params[:id])
+    @event = Event.only_available.find_by_friendly_id!(params[:id])
   end
 
   def new
@@ -70,8 +71,8 @@ class Admin::EventsController < AdminController
     @event.save!
 
     respond_to do |format|
-      format.html { redirect_to admin_events_path }
-      format.json { render :json => { :message => "ok" }}
+      format.html {redirect_to admin_events_path}
+      format.json {render :json => {:message => "ok"}}
     end
 
     # redirect_to admin_events_path

@@ -18,6 +18,9 @@ class Event < ApplicationRecord
 
   belongs_to :category, :optional => true
 
+  scope :only_public, -> { where(:status => "public") }
+  scope :only_available, -> { where(:status => ["public", "private"]) }
+
 
 
   # 优化网址第一种方法
