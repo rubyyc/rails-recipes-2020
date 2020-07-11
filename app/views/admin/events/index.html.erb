@@ -24,7 +24,9 @@
         <!--        <td><%#= link_to event.name, admin_event_path(event) %></td>-->
         <td>
           <span class="sortable_icon">☰</span>
-          <%= link_to event.name, admin_event_path(event) %>
+          <span data-turbolinks="false">
+            <%= link_to event.name, admin_event_path(event) %>
+          </span>
         </td>
         <td>
           <%#= link_to "上移", reorder_admin_event_path(event, :position => :up), :method => :post, :class => "btn btn-default" %>
