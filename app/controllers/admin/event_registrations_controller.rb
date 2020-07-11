@@ -1,6 +1,7 @@
 require 'csv'
 class Admin::EventRegistrationsController < AdminController
   before_action :find_event
+  before_action :require_editor!
 
   def index
     # @registrations = @event.registrations.includes(:ticket).order("id DESC").page(params[:page]).per(10)

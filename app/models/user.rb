@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  ROLES = ["admin", "editor"]
   has_many :memberships
   has_many :groups, through: :memberships
   has_one :profile
