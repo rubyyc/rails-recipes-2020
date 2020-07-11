@@ -25,7 +25,12 @@ Rails.application.routes.draw do
 
     resources :events do
       resources :tickets, :controller => "event_tickets"
-      resources :registrations, :controller => "event_registrations"
+      # resources :registrations, :controller => "event_registrations"
+      resources :registrations, :controller => "event_registrations" do
+        collection do
+          post :import
+        end
+      end
       collection do
         post :bulk_update
       end
