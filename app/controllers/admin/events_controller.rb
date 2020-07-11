@@ -60,7 +60,7 @@ class Admin::EventsController < AdminController
     if @event.registrations.any?
       dates = (@event.registrations.order("id ASC").first.created_at.to_date..Date.today).to_a
 
-      puts dates
+      # puts dates
 
       @data3 = {
           labels: dates,

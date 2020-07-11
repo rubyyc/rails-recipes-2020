@@ -1,4 +1,5 @@
 class Registration < ApplicationRecord
+  has_paper_trail
   attr_accessor :current_step
   STATUS = ["pending", "confirmed"]
   validates_inclusion_of :status, :in => STATUS
